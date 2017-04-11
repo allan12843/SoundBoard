@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.allan.mysoundboard.MainActivity"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category 1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound1"
+        android:text="Play Sound"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound2"
+        android:text="Play Sound"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category 2"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/button1"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound3"
+        android:text="Play Sound"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound4"
+        android:text="Play Sound"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category 3"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound5"
+        android:text="Play Sound"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sound6"
+        android:text="Play Sound"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_above="@+id/button7"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_marginBottom="33dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category 4"
+        tools:ignore="HardcodedText"
+        android:layout_toStartOf="@+id/button7"
+        android:layout_alignTop="@+id/button6" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Sound"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button8"
+        android:layout_toStartOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Sound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
